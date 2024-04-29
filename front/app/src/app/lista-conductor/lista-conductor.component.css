@@ -1,0 +1,130 @@
+  table {
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: rgb(218, 218, 218);  
+    border-radius: 8px;
+  }
+  
+
+form {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+input[type="text"] {
+    padding: 0.7em;
+    display: inline-block;
+    
+}
+button {
+    padding: 10px;
+    border: solid 10px var(black);
+    color: rgb(255, 255, 255);
+    border-radius: 99px;
+    background-color: #000000;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 500;
+}
+form input {
+    border: none;
+    border-radius: 99px;
+    outline: 3px solid transparent;
+    background: rgba(37, 37, 37, 0.664);
+    transition: 0.3s;
+    color: white;
+    font-weight: 400;
+}
+form input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+form input:focus {
+    outline: 3px solid rgba(0, 0, 0, 0.815);
+}
+
+
+
+
+#container{
+  background-color:rgb(146, 104, 13);
+  padding: 0.3em;
+  margin-bottom: 1em;
+  opacity: 100%;
+  border-radius: 1em;
+}
+#container:hover {
+  box-shadow: rgba(36, 19, 0, 0.801) 0 4px 8px, rgba(84, 56, 145, 0.3) 0 7px 13px -3px;
+  transform: translateY(-1px);
+}
+  
+#datos{
+  background-color: rgb(46, 46, 46);
+  border-radius: 1em;
+  padding: 0.3em;
+}
+#datos h1{
+  vertical-align:bottom;
+  text-align: center;
+  font-family: "JetBrains Mono",monospace;
+  color: rgb(218, 218, 218);   
+}
+
+#informacion{
+  justify-content:space-between;
+  display: flex;
+  color: rgb(218, 218, 218);  
+}
+#informacion h2{
+  font-family: "JetBrains Mono",monospace;
+  margin-bottom: 0;
+}
+ 
+ 
+#edadConductor{
+  padding: 0.5em;
+   
+}
+p{
+  margin:0;
+}
+
+#botones{
+  display: flex;
+}
+#editar{
+  padding: 0.5em;
+}
+#editar i{
+  padding: 0.5em;
+  --fa-animation-duration:0s;
+}
+#editar i:hover{
+  --fa-animation-duration:1s;
+  color:lightgreen;
+ }
+  
+#borrar{
+  padding: 0.5em;
+}
+#borrar i{
+  padding: 0.5em;
+  --fa-animation-duration:0s;
+}
+#borrar i:hover{
+  --fa-animation-duration:1s;
+  color: red;
+}
+  
+  

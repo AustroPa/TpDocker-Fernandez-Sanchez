@@ -1,0 +1,30 @@
+version: '3'
+# Servicios del proyecto
+services:
+
+  # API
+  back:
+
+    # agarro la imagen del docker creado anteriormente
+    image: dockerback
+
+    # Enlace de puertos entre el entorno local y el contenedor
+    ports:
+      - "3000:3000"
+
+    # Red donde se ubica el servicio
+    networks:
+      - network
+
+  front:
+    image: dockerfront
+    ports:
+      - "4200:4200"
+    networks:
+      - network
+
+# Redes del proyecto
+networks:
+  # Red donde se ejecutarán los contenedores
+  network:
+    name: network

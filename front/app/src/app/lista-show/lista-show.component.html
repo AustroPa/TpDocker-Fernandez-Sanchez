@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="buscador">
+    <form (submit)="onSubmit($event, filtro.value)">
+        <input type="text" placeholder="Filtrar por nombre" #filtro>
+        <button class="secondary" type="button" (click)="filtrarResultados(filtro.value)">Buscar</button>
+    </form>
+  </div>
+
+    <div id="listaDeShows">
+      <div *ngFor="let show of resultados">
+        <div id="container">
+            <div id="caja">
+              <div id="datos">
+                <div id="nombrePrograma"><h1>{{show.nombre}}</h1></div>
+                <div id="divFoto"><img id="foto" src={{show.foto}} alt=""></div>
+
+                <div id="infobotones">
+                <div id="informacion">
+                  <div id="horario"> <h2>{{show.horaInicio}} - {{show.horaFinal}}</h2> </div>
+                  <div id="duracion"> <h3> Duracion: {{show.duracion}} minutos</h3></div>
+                  <div id="conductor"> <h3>Id conductor: {{show.idConductores}}</h3> </div>
+                </div>
+                <div id="botonsitos">
+                  <div id="editar"><button (click)="openPopup(show.id)"><i class="fa-solid fa-pencil fa-bounce"></i></button></div>
+                  <div id="borrar"><button (click)="borrarShow(show.id)"><i class="fa-solid fa-trash fa-bounce"></i></button></div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    
+
+
+</body>
+</html>
+

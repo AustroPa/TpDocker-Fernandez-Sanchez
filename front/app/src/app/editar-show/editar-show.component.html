@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div mat-dialog-title> <h2 >{{show.nombre}}</h2> </div>
+    <div mat-dialog-content >
+      <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <!--<label for="id">Id</label>
+        <input id="id" type="number" formControlName="id" min="0">
+        -->
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" formControlName="nombre">
+
+        <label for="foto">Foto</label>
+        <input id="foto" type="text" formControlName="foto">
+  
+        <label for="idConductores">Id del Conductor \n</label>
+        <input id="idConductores" type="number" formControlName="idConductores" min="0">
+  
+        <label for="horaInicio">Hora de Inicio</label>
+        <input id="horaInicio" type="text" formControlName="horaInicio">
+
+        <label for="horaFinal">Hora de Finalizacion</label>
+        <input id="horaFinal" type="text" formControlName="horaFinal">
+
+        <label for="duracion">Duracion del Show</label>
+        <input id="duracion" type="number" formControlName="duracion" min="0" value=1>
+  
+        <button type="submit" (click)="submitApplication()" class="primary">Aplicar cambios</button>
+      </form>
+    </div> 
+    <div mat-dialog-actions>
+      <button (click)="closePopup()">Cerrar</button>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buscador">
+        <form (submit)="onSubmit($event, filtro.value)">
+            <input type="text" placeholder="Filtrar por nombre" #filtro>
+            <button class="secondary" type="button" (click)="filtrarResultados(filtro.value)">Buscar</button>
+        </form>
+    </div>
+      <div *ngFor="let conductor of resultados">
+        <div id="container">
+            <div id="caja">
+              <div id="datos">
+                <div id="nombreConductor"><h1>{{conductor.nombre}} {{conductor.apellido}}</h1></div>
+                <div id="informacion">
+                  <div id="edadConductor"> <h2>{{conductor.edad}} años</h2> </div>
+                  <div id="botones">
+                    <div id="editar"><button (click)="openPopup(conductor.id)"><i class="fa-solid fa-pencil fa-bounce"></i></button></div>
+                    <div id="borrar"><button (click)="borrarConductor(conductor.id)"><i class="fa-solid fa-trash fa-bounce"></i></button></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    
+
+
+</body>
+</html>
+

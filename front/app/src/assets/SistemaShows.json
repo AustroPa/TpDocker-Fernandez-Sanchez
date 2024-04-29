@@ -1,0 +1,75 @@
+{"Show":[{
+    "id":1,
+    "nombre":"Jugando con Juansito",
+    "idConductores":[1],
+    "duracion":90,
+    "horaInicio":"21:30",
+    "horaFinal":"23:00"
+},    {
+  "id":2,
+    "nombre": "Cocinando con Carla",
+    "idConductores": [2],
+    "duracion": 60,
+    "horaInicio": "18:00",
+    "horaFinal": "19:00"
+  },
+  {
+    "id":3,
+    "nombre": "Deportes en Directo",
+    "idConductores": [3],
+    "duracion": 120,
+    "horaInicio": "20:00",
+    "horaFinal": "22:00"
+  },
+  {
+    "id":4,
+    "nombre": "Conciertos en Casa",
+    "idConductores": [4],
+    "duracion": 90,
+    "horaInicio": "19:30",
+    "horaFinal": "21:00"
+
+  },
+  {
+    "id":5,
+    "nombre": "Entrevistas con Expertos",
+    "idConductores": [5],
+    "duracion": 60,
+    "horaInicio": "16:00",
+    "horaFinal": "17:00"
+  }],
+
+  
+  
+  "conductor":[{
+    "nombre":"Mateo",
+    "apellido":"Incutti",
+    "edad":18,
+    "id":1
+},
+{
+    "nombre":"Cristian",
+    "apellido":"Fernandez",
+    "edad":17,
+    "id":2
+}, 
+{
+    "nombre": "Lucía",
+    "apellido": "González Canas",
+    "edad": 20,
+    "id": 3
+  },
+  {
+    "nombre": "Diego",
+    "apellido": "Martínez",
+    "edad": 19,
+    "id": 4
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Rodríguez",
+    "edad": 22,
+    "id": 5
+  }
+]
+}

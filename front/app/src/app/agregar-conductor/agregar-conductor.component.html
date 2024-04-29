@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <form [formGroup]="applyForm" (submit)="submitApplication()" class="form">
+    <h2 class="form_title">Agregar Conductor</h2>
+
+
+        <div class="form_container">
+
+
+          <div class="form_group">
+
+            
+            <input id="id" type="number" formControlName="id" class="form_input" placeholder=" ">
+                <label for="id" class="form_label">id</label>
+                <span class="form_line"></span>
+                
+            
+            </div>
+            
+            <div class="form_group">
+
+                <input id="nombre" type="text" formControlName="nombre" class="form_input" placeholder=" ">
+                <label for="nombre" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+
+            </div>
+
+            <div class="form_group">
+                
+                <input id="apellido" type="text" formControlName="apellido" class="form_input" placeholder=" ">
+                <label for="apellido"class="form_label">apellido</label>
+                <span class="form_line"></span>
+
+            </div>
+
+    <div class="form_group">
+        <input id="edad" type="number" formControlName="edad" min="0" class="form_input" placeholder=" ">
+        <label for="edad" class="form_label">edad</label>
+        <span class="form_line"></span>
+    </div>
+
+        <button type="submit" (click)="submitApplication()"  class="form_submit" class="primary">Agregar Conductor</button>
+        <button (click)="closePopup()">Cerrar</button>
+
+    </div>
+      </form>
+</body>
+</html>
+
+

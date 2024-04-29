@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <nav id="navBar">
+    <div id="nav"><h1 id="nombreCanal">LaPo TeVé</h1><img id="logoPagina" src="../assets/logoPagina.png" alt=""></div>
+  </nav>
+
+  <div id="container">
+    <div id="botones"> 
+      <button class="button-30" role="button" (click)="cambiarLista()">Alternar Lista</button>
+    
+      <button *ngIf="programa" class="button-30" role="button" (click)="abrirAgregarShow()">Agregar Programa</button>
+      <button *ngIf="!programa" class="button-30" role="button" (click)="abrirAgregarConductor()">Agregar Conductor</button>
+    </div>
+
+  <div id="lista">
+    <div id="listaConductor" *ngIf="!programa"><lista-conductor></lista-conductor></div>
+    <div id="listaPrograma"*ngIf="programa"><lista-show></lista-show></div>
+  </div>
+<!--
+  <div  *ngIf="abrirAgregarShow"><agregar-show></agregar-show></div>
+-->
+</div>
+</body>
+</html>

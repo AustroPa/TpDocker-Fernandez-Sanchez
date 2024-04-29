@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+   <form [formGroup]="applyForm" (submit)="submitApplication()" class="form">
+
+        <h2 class="form_title">Agregar Show</h2>
+
+
+        <div class="form_container">
+        
+          <div class="form_group">
+        <input id="id" type="number" formControlName="id" class="form_input" placeholder=" ">
+        <label for="id" class="form_label">id</label>
+        <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+        <input id="nombre" type="text" formControlName="nombre" class="form_input" placeholder=" ">
+        <label for="nombre" class="form_label">Nombre</label>
+        <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+        <input id="foto" type="text" formControlName="foto" class="form_input" placeholder=" ">
+        <label for="foto" class="form_label">Foto</label>
+        <span class="form_line"></span>
+        </div>
+      
+        <div class="form_group">
+        <input id="idConductores" type="number" formControlName="idConductores" min="0" class="form_input" placeholder=" ">
+        <label for="idConductores" class="form_label">Id del Conductor</label>
+        <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+        <input id="horaInicio" type="text" formControlName="horaInicio" class="form_input" placeholder=" ">
+        <label for="horaInicio" class="form_label">Hora de Inicio</label>
+        <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+        <input id="horaFinal" type="text" formControlName="horaFinal" class="form_input" placeholder=" ">
+        <label for="horaFinal" class="form_label">Hora de Finalizacion</label>
+        <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+        <input id="duracion" type="number" formControlName="duracion" min="0" class="form_input" placeholder=" ">
+        <label for="duracion" class="form_label">Duracion del Show</label>
+        <span class="form_line"></span>
+        </div>
+
+        <button type="submit" (click)="submitApplication()" class="primary">Agregar Show</button>
+        <button (click)="closePopup()">Cerrar</button>
+        
+      
+      </div>
+      
+    </form>
+</body>
+</html>
+
+
